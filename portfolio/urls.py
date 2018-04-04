@@ -2,10 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-import jobs.views
+import home.views
 
 urlpatterns = [
-    path('',jobs.views.home, name='home'),
+    path('',home.views.home, name='home'),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
 

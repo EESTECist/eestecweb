@@ -4,6 +4,8 @@
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -23,25 +25,9 @@
   min-width: 100%;
   height: 32rem;
 }
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+#slides{
+  background-color: #eeeeee;
 }
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-
 /* Featurettes
 ------------------------- */
 

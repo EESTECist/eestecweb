@@ -8,12 +8,17 @@ class Post(models.Model):
     slug = models.SlugField(unique=True)
     text = models.TextField()
     pub_date = models.DateTimeField(default=datetime.now, blank=True)
+    image = models.FileField(upload_to='static/home/upload', blank=True)
+
+    class Meta:
+        ordering = ["pub_date"]
 
     def __unicode__(self):
         return self.title
 
     def __str__(self):
         return self.title
+
 
 #    @models.permalink
     def get_absolute_url(self):

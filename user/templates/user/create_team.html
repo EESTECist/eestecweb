@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ request.user.is_yk }}
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create Team">
+    </form>
+
+
+</body>
+</html>

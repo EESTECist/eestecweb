@@ -5,7 +5,7 @@ from .models import Post
 class PostListView(generic.ListView):
     model = Post
     context_object_name = 'post_list'
-    queryset = Post.objects.filter()[:3]
+    queryset = Post.objects.filter()[:4]
     template_name = 'home/homepage.html'
 
 class PostDetailView(generic.DetailView):

@@ -1,10 +1,23 @@
 {% extends 'home/base.html' %}
 
 {% block content %}
+<div class="text-center">
+    <img src= "{{post.image.url}}" class="image-fluid">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+        <h1> başlık :{{post.title}} </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+        <h4> {{post.text}} </h4>
+    </div>
+  </div>
+</div>
 
 
-  <h1> {{post.title}} </h1>
-  <h4> {{post.text}} </h4>
-  <img src= "{{post.image.url}}">
 
-{% endblock%}
+
+{% endblock %}

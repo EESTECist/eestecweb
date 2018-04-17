@@ -11,6 +11,7 @@ carouseli postlardan alıyor şu an, son postları göstermek için ayarlayabili
        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
        <li data-target="#myCarousel" data-slide-to="1"></li>
        <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target='#myCarousel' data-slide-to="3"></li>
      </ol>
      <div class="carousel-inner">
        {% for post in post_list %}
@@ -41,20 +42,29 @@ carouseli postlardan alıyor şu an, son postları göstermek için ayarlayabili
      </a>
    </div>
  </div>
-<!-- carouselin altındaki 3 tane şey sayısını arttırabiliriz vs bunları da ssa iot uniday yapabiliriz-->
+<!-- ssa iot uniday yapabiliriz-->
   <div class="container">
    <div class="row">
-     {% for post in post_list %}
        <div class="col-lg-4">
-         <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-         <h2>{{post.title}}</h2>
-         <p>{{ post.text }}</p>
+         <img class="rounded-circle" src="https://i1.wp.com/ssa.eestec.istanbul/wp-content/uploads/2017/11/ssa-logo_trans.png?resize=300%2C300" alt="Generic placeholder image" width="140" height="140">
+         <h2>SSA</h2>
+         <p> soft skills academy </p>
          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
-      {% endfor %}
+       <div class="col-lg-4">
+         <img class="rounded-circle" src="http://www.iotlinefair.com/wp-content/uploads/2018/02/%C4%B1ot181.png" alt="Generic placeholder image" width="140" height="140">
+         <h2>IOT</h2>
+         <p>internet of things</p>
+         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+       <div class="col-lg-4">
+         <img class="rounded-circle" src="https://i1.wp.com/uniday.istanbul/wp-content/uploads/2017/11/cropped-Yanyanaaa-ayr%C4%B1que-tarihsiz.jpeg?resize=768%2C242" alt="Generic placeholder image" width="140" height="140">
+         <h2>UNIDAY</h2>
+         <p>üniday</p>
+         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
      </div><!-- /.row -->
-</div>
-
+   </div>
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Hi, I'm Ata</h1>

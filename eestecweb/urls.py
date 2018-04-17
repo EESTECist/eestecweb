@@ -8,7 +8,6 @@ urlpatterns = [
 #    path('',home.views.home, name='home'),
     path('', include('home.urls')),
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
     path('user/', include('user.urls', namespace='user')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
